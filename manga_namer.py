@@ -120,7 +120,7 @@ def main(input_chapter, series_title, input_volume, input_language, groups, fold
         width_range = range((w - 50),(w + 51))
         mode_range = range(((get_width_mode * 2) - 50),((get_width_mode * 2) + 51))
 
-        if width_range[0] in mode_range or width_range[-1] in mode_range:
+        if width_range[0] in mode_range or width_range[-1] in mode_range or w in mode_range:
             page_no = f'{page_number:0>3}-{(page_number+1):0>3}'
             page_number += 2
         else:
